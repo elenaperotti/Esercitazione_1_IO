@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -42,7 +43,7 @@ int main() {
         media = somma/(N+1);
         N++;
         // Stampo la media ottenuta fino al valore raggiunto
-        outFile << N << " " << media << scientific <<  "\n";
+        outFile << N << " " << media << setprecision(16)<< scientific <<  "\n";
     }
 
     inFile.close();
