@@ -23,11 +23,6 @@ int main() {
     const string nomefileoutput = "result.csv";
     ofstream outFile(nomefileoutput);
 
-    if (!inFile.is_open()) {
-        cerr << "Errore: il file " << nomefileoutput << " non si apre. " << endl;
-        return -1;
-    }
-
     double somma = 0.0;
     double numero;
     double media = 0;
